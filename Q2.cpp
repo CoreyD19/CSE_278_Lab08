@@ -23,16 +23,50 @@ class Student
 
 
 
-class CSStudent
-//=====TO DO==================
-//complete the definition for CSStudent
+class CSStudent: public Student{
+    public:
+    
+    CSStudent(){}
+    CSStudent(int ID){
+    this->ID=ID;
+        }
+        int getID()
+        {
+            return ID;
+        }
+        
+    
+    void ShowMajor()
+        {
+            cout<<"I am a student majoring Computer Science\n";
+            cout<<"and my ID is: " <<ID<< endl;
+
+        }
+
+
 };
 
 
 
-class SEStudent
-//=====TO DO==================
-//complete the definition for SEStudent
+class SEStudent: public Student{
+    public:
+    
+    SEStudent(){}
+    SEStudent(int ID){
+    this->ID=ID;
+        }
+        int getID()
+        {
+            return ID;
+        }
+        
+    void ShowMajor()
+        {
+            cout<<"I am a student majoring Software Engineering\n";
+            cout<<"and my ID is: " <<ID<< endl;
+
+        }
+
 
 };
 
