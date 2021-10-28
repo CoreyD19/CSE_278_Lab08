@@ -4,9 +4,9 @@ class Student
 {
     public:
         Student(){}
-        Student(int newID):ID(newID)
+        Student(int newID)
         {
-
+    ID = newID;
         }
         int getID()
         {
@@ -40,10 +40,32 @@ class RA
         int Salary;
 };
 
-class AboutMe
-//=====TO DO==================
-//complete the definition for AboutMe
-
+class AboutMe: public Student, public RA {
+public:
+        AboutMe(){}
+        AboutMe(int newID, int newSalary):ID(newID), Salary(newSalary){}
+        void setMyID(int newID){
+            ID = newID;
+        }
+        int getID()
+        {
+            return ID;
+        }
+        void ShowMajor()
+        {
+            cout<<"I am a student in Miami University\n";
+        }
+        
+        void setSalary(int newSalary){
+            Salary = newSalary;
+        }
+        void DisplayInfo() {
+            cout<<"My ID in Miami is: "<<ID<<"\n";
+            cout<<"My salary as an RA is: "<<Salary<<"\n";
+        }
+    protected:
+        int ID;
+        int Salary;
 };
 
 int main()
