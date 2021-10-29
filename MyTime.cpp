@@ -1,20 +1,21 @@
+#include<iostream>
 #include "MyTime.h"
-MyTime:: MyTime()
-{}
+MyTime(){}
 
 //=====TO DO====(b)===============
-MyTime:: MyTime(int hr, int mi){
+MyTime(int hour, int min){
     // complete the constructor function using the 
     // Initialization way.
-    hour(hr), min(mi){
-
-    }
+    this->hour= hour; 
+    this->min=min;
 }
 
 //=====TO DO=====(e)=============
-MyFile::MyTime operator+(const MyTime& b)
+// complete the operator overloading for +
+
+/* MyTime::MyTime operator+(const MyTime& b)
 {
-    // complete the operator overloading for +
+    
     MyTime Mytime;
     Mytime.hour = this->hour + b.hour;
     Mytime.min = this->min + b.min;
@@ -24,13 +25,16 @@ MyFile::MyTime operator+(const MyTime& b)
 
 
 //=====TO DO=====(f)=============
-MyFile::bool operator<(const MyTime&b){
+
+// complete the operator overloading for <
+
+MyTime::MyTime bool operator<(const MyTime&b){
 
 if((this.hour)>(b.hour){
 return true;
 }
 else if((this.hour)==(b.hour)){
-    if(this.min)> (b.min)){
+    if(this.min)>(b.min)){
         return true;
     }
 }
@@ -38,13 +42,12 @@ else return false;
 
 
     
-    // complete the operator overloading for <
-}
-MyTime::~MyTime()
-{
-    std::cout<<"end of the object. Space Deleted.\n";
-}
-void MyTime::displayTime()
-{
-    std::cout<<"The time is: hour: "<<hour<<"   The min is:  "<<min<<".\n";
-}
+} */
+//MyTime::~MyTime()
+//{
+    //std::cout<<"end of the object. Space Deleted.\n";
+//}
+//displayTime()
+//{
+   // std::cout<<"The time is: hour: "<<hour<<"   The min is:  "<<min<<".\n";
+//}

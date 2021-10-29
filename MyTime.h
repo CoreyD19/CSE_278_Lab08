@@ -3,14 +3,19 @@
 class MyTime
 {
     public:
-        MyTime();
-        MyTime(int hr, int mi);
-        ~MyTime();
-        void displayTime();
+        MyTime(){}
+        MyTime(int hour, int min){
+            this->hour = hour;
+            this->min = min;
+        }
+        void displayTime()
+{
+    std::cout<<"The time is: hour: "<<hour<<"   The min is:  "<<min<<".\n";
+}
     //operation overload for + (e)
-    MyTime operator+(const MyTime& b);
+   // MyTime operator+(const MyTime& b);
     //operation overload for > (f)
-    bool operator<(const MyTime& b);
+   // MyTime bool operator<(const MyTime& b);
     
         int hour;
         int min;

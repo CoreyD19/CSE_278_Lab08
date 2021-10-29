@@ -17,7 +17,7 @@ int main()
     MyTime VcB(hrB,MinB);
     cout<<"Time for VcB is: \n";
     VcB.displayTime();
-    MyTime VcC;
+  /*  MyTime VcC;
     VcC=VcA+VcB;
     cout<<"Time for VcC is: \n";
     VcC.displayTime();
@@ -28,7 +28,7 @@ int main()
     else
     {
         cout<<"VcA<VcB is false\n";
-    }
+    } */
 
 
 }
